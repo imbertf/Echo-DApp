@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/EchoPlayer.sol": {
+      "content": "//SPDX-License-Identifier: MIT\npragma solidity 0.8.26;\n\ncontract EchoPlayer {\n    struct Session {\n        uint256 startTime;\n        uint256 endTime;\n    }\n\n    mapping(address => Session) public sessions;\n\n    event StartListening (address _user, string _message, uint256 _at);\n    event StopListening (address _user, string _message, uint256 _at);\n    \n    function startListening() public {\n        sessions[msg.sender].startTime = block.timestamp;\n        sessions[msg.sender].endTime = 0;\n\n        emit StartListening(msg.sender, \"Start listening\", block.timestamp);\n    }\n\n    function stopListening() public {\n        require(sessions[msg.sender].startTime != 0, \"Listening session not started\");\n        sessions[msg.sender].endTime = block.timestamp;\n\n        emit StopListening(msg.sender, \"Stop listening\", block.timestamp);\n    }\n\n    function getListeningDurationInSeconds(address user) public view returns (uint256) {\n        require(sessions[user].endTime != 0, \"Listening session not stopped\");\n        return sessions[user].endTime - sessions[user].startTime;\n    }\n\n    function getListeningDurationInMinutes(address user) public view returns (uint256) {\n        uint256 durationInSeconds = getListeningDurationInSeconds(user);\n        return durationInSeconds / 60;\n    }\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}

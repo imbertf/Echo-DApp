@@ -1,0 +1,217 @@
+{
+  "address": "0xB9C404296533c80D95F4d941093542084E0FCE83",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_message",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_at",
+          "type": "uint256"
+        }
+      ],
+      "name": "StartListening",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "_user",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "_message",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "_at",
+          "type": "uint256"
+        }
+      ],
+      "name": "StopListening",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getListeningDurationInMinutes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getListeningDurationInSeconds",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "sessions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "startListening",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stopListening",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x2c17e6fbef7a49997ebb6765078dcdb236476400a7d91ad03163f0a760eaaa4b",
+  "receipt": {
+    "to": null,
+    "from": "0xE8926899359723da65Ce5A0e14912E003db5acca",
+    "contractAddress": "0xB9C404296533c80D95F4d941093542084E0FCE83",
+    "transactionIndex": 0,
+    "gasUsed": "251254",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x7cc5946462beccb9b9f332ec77e0ca3fa697ded75c6e4f0dd43c9524ecf2fe2d",
+    "transactionHash": "0x2c17e6fbef7a49997ebb6765078dcdb236476400a7d91ad03163f0a760eaaa4b",
+    "logs": [],
+    "blockNumber": 1377162,
+    "cumulativeGasUsed": "251254",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "24e4872a239759784960a6f6f3c096df",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.26+commit.8a97fa7a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_at\",\"type\":\"uint256\"}],\"name\":\"StartListening\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"_message\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"_at\",\"type\":\"uint256\"}],\"name\":\"StopListening\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getListeningDurationInMinutes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getListeningDurationInSeconds\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"sessions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"startListening\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stopListening\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/EchoPlayer.sol\":\"EchoPlayer\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/EchoPlayer.sol\":{\"content\":\"//SPDX-License-Identifier: MIT\\npragma solidity 0.8.26;\\n\\ncontract EchoPlayer {\\n    struct Session {\\n        uint256 startTime;\\n        uint256 endTime;\\n    }\\n\\n    mapping(address => Session) public sessions;\\n\\n    event StartListening (address _user, string _message, uint256 _at);\\n    event StopListening (address _user, string _message, uint256 _at);\\n    \\n    function startListening() public {\\n        sessions[msg.sender].startTime = block.timestamp;\\n        sessions[msg.sender].endTime = 0;\\n\\n        emit StartListening(msg.sender, \\\"Start listening\\\", block.timestamp);\\n    }\\n\\n    function stopListening() public {\\n        require(sessions[msg.sender].startTime != 0, \\\"Listening session not started\\\");\\n        sessions[msg.sender].endTime = block.timestamp;\\n\\n        emit StopListening(msg.sender, \\\"Stop listening\\\", block.timestamp);\\n    }\\n\\n    function getListeningDurationInSeconds(address user) public view returns (uint256) {\\n        require(sessions[user].endTime != 0, \\\"Listening session not stopped\\\");\\n        return sessions[user].endTime - sessions[user].startTime;\\n    }\\n\\n    function getListeningDurationInMinutes(address user) public view returns (uint256) {\\n        uint256 durationInSeconds = getListeningDurationInSeconds(user);\\n        return durationInSeconds / 60;\\n    }\\n}\\n\",\"keccak256\":\"0xf11d8927cfa2950304a8dd8d2415949e78d2b0024f4c4c8878e7dcaa805bed1d\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b506103958061001f6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063014c183d1461005c57806312b8bbdd14610082578063431a1b971461008c57806363a78b1b146100c8578063bbcb8a8c146100db575b600080fd5b61006f61006a3660046102f3565b6100e3565b6040519081526020015b60405180910390f35b61008a610182565b005b6100b361009a3660046102f3565b6000602081905290815260409020805460019091015482565b60408051928352602083019190915201610079565b61006f6100d63660046102f3565b610200565b61008a610220565b6001600160a01b03811660009081526020819052604081206001015481036101525760405162461bcd60e51b815260206004820152601d60248201527f4c697374656e696e672073657373696f6e206e6f742073746f7070656400000060448201526064015b60405180910390fd5b6001600160a01b0382166000908152602081905260409020805460019091015461017c919061031c565b92915050565b336000818152602081815260408083204280825560019091019390935580519384526060918401829052600f918401919091526e5374617274206c697374656e696e6760881b60808401528201527f081e6f4a4649483e906cad44c0e0dfe336b91169c12205e7d9e932748d3d0a8e9060a0015b60405180910390a1565b60008061020c836100e3565b9050610219603c8261033d565b9392505050565b33600090815260208190526040812054900361027e5760405162461bcd60e51b815260206004820152601d60248201527f4c697374656e696e672073657373696f6e206e6f7420737461727465640000006044820152606401610149565b336000818152602081815260409182902042600190910181905582519384526060918401829052600e918401919091526d53746f70206c697374656e696e6760901b6080840152908201527f854e8343c35c6a39bffd45422c86302a666c34c81b449ca47f59b1964a3aeca69060a0016101f6565b60006020828403121561030557600080fd5b81356001600160a01b038116811461021957600080fd5b8181038181111561017c57634e487b7160e01b600052601160045260246000fd5b60008261035a57634e487b7160e01b600052601260045260246000fd5b50049056fea2646970667358221220c8d9ae0530bbaacd873f195a07ddf385e155ad8342f76db57e24fa4789e14c6d64736f6c634300081a0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063014c183d1461005c57806312b8bbdd14610082578063431a1b971461008c57806363a78b1b146100c8578063bbcb8a8c146100db575b600080fd5b61006f61006a3660046102f3565b6100e3565b6040519081526020015b60405180910390f35b61008a610182565b005b6100b361009a3660046102f3565b6000602081905290815260409020805460019091015482565b60408051928352602083019190915201610079565b61006f6100d63660046102f3565b610200565b61008a610220565b6001600160a01b03811660009081526020819052604081206001015481036101525760405162461bcd60e51b815260206004820152601d60248201527f4c697374656e696e672073657373696f6e206e6f742073746f7070656400000060448201526064015b60405180910390fd5b6001600160a01b0382166000908152602081905260409020805460019091015461017c919061031c565b92915050565b336000818152602081815260408083204280825560019091019390935580519384526060918401829052600f918401919091526e5374617274206c697374656e696e6760881b60808401528201527f081e6f4a4649483e906cad44c0e0dfe336b91169c12205e7d9e932748d3d0a8e9060a0015b60405180910390a1565b60008061020c836100e3565b9050610219603c8261033d565b9392505050565b33600090815260208190526040812054900361027e5760405162461bcd60e51b815260206004820152601d60248201527f4c697374656e696e672073657373696f6e206e6f7420737461727465640000006044820152606401610149565b336000818152602081815260409182902042600190910181905582519384526060918401829052600e918401919091526d53746f70206c697374656e696e6760901b6080840152908201527f854e8343c35c6a39bffd45422c86302a666c34c81b449ca47f59b1964a3aeca69060a0016101f6565b60006020828403121561030557600080fd5b81356001600160a01b038116811461021957600080fd5b8181038181111561017c57634e487b7160e01b600052601160045260246000fd5b60008261035a57634e487b7160e01b600052601260045260246000fd5b50049056fea2646970667358221220c8d9ae0530bbaacd873f195a07ddf385e155ad8342f76db57e24fa4789e14c6d64736f6c634300081a0033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 11,
+        "contract": "contracts/EchoPlayer.sol:EchoPlayer",
+        "label": "sessions",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_address,t_struct(Session)6_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_address,t_struct(Session)6_storage)": {
+        "encoding": "mapping",
+        "key": "t_address",
+        "label": "mapping(address => struct EchoPlayer.Session)",
+        "numberOfBytes": "32",
+        "value": "t_struct(Session)6_storage"
+      },
+      "t_struct(Session)6_storage": {
+        "encoding": "inplace",
+        "label": "struct EchoPlayer.Session",
+        "members": [
+          {
+            "astId": 3,
+            "contract": "contracts/EchoPlayer.sol:EchoPlayer",
+            "label": "startTime",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256"
+          },
+          {
+            "astId": 5,
+            "contract": "contracts/EchoPlayer.sol:EchoPlayer",
+            "label": "endTime",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256"
+          }
+        ],
+        "numberOfBytes": "64"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
